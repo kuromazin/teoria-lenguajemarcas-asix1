@@ -69,6 +69,7 @@ Hay que tener la imagen metido dentro del repositorio
 ```
 ![Hora de Bailar](https://github.com/kuromazin/teoria-lenguajemarcas-asix1/blob/main/img/gif%20feo.gif)
 ```
+![Hora de Bailar](https://github.com/kuromazin/teoria-lenguajemarcas-asix1/blob/main/img/gif%20feo.gif)
 #### 2.8 Tablas
 Para hacer las tablas hay que seguir la siguiente estructura:
 ```
