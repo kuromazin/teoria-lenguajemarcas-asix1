@@ -79,5 +79,53 @@ Para hacer las tablas hay que seguir la siguiente estructura:
 | Fila 2   | Dato 2   |
 ```
 ### 3.HTML
+### 3.1 Estructura Base
+````
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+````
+### 3.2 Etiquetas utiles
+#### Titulos
+Como en markdown tenemos diferentes tipos de titulos algunos ejemplos de ellos:
+```
+<h1>Encabezado grande</h1>
+<h2>Encabezado mediano</h2>
+```
+#### Parrafos
+Para los parrafos usaremos el '(<p></p>)'
+#### Enlaces y imagenes
+Para enlaces y imagenes usaremos las siguientes estructuras:
+```
+<a href="https://github.com/kuromazin/teoria-lenguajemarcas-asix1?tab=readme-ov-file#2-markdown">Los apuntes mas simples y claros</a>
+```
+```
+<img src="ejemplo.png" alt="ejemplo" width="100" height="100">
+```
+#### Listas
+Hay 2 tipos de listas:
+Enumerada:
+```
+<ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ol>
+```
+Por viñetas:
+```
+<ol>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ol>
+```
 ### 4.CSS
 ### 5.RESPONSIVE
