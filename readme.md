@@ -67,7 +67,7 @@ Para colar enlaces en el documento de markdown hay que hacer lo siguiente:
 #### 2.7 Imagenes
 Hay que tener la imagen metido dentro del repositorio 
 ```
-![Hora de Bailar](https://github.com/kuromazin/ASIX1-AprendizajeMarkdown1/blob/main/cool.jpg)
+![Hora de Bailar](https://github.com/kuromazin/teoria-lenguajemarcas-asix1/blob/main/img/gif%20feo.gif)
 ```
 #### 2.8 Tablas
 Para hacer las tablas hay que seguir la siguiente estructura:
