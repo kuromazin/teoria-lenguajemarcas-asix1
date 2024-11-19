@@ -4,7 +4,7 @@
 2. [MARKDOWN](#2-markdown "Enlace al apartado de MarkDown")
 3. [HTML](#3-html "Enlace al apartado de HTML")
 4. [CSS](#4-css "Enlace al apartado de CSS")
-5. [DISEÑO RESPONSIVE](#5-diseño-responsive "Enlace al apartado de  Diseño Responsive")
+5. [RESPONSIVE](#5-diseño-responsive "Enlace al apartado de  Diseño Responsive")
 ### 1. GITHUB
 #### 1.1 Instalacion de GITHUB
 Aqui esta el link de instalacion de la herramienta.
@@ -102,7 +102,10 @@ Como en markdown tenemos diferentes tipos de titulos algunos ejemplos de ellos:
 <h2>Encabezado mediano</h2>
 ```
 #### Parrafos
-Para los parrafos usaremos el '(<p></p>)'
+Para los parrafos usaremos el
+```
+ '(<p></p>)'
+```
 #### Enlaces y imagenes
 Para enlaces y imagenes usaremos las siguientes estructuras:
 ```
@@ -126,6 +129,96 @@ Por viñetas:
     <li>Elemento 1</li>
     <li>Elemento 2</li>
 </ol>
+```
+#### Formulario Etiquetas NECESARIAS
+```<form>```: Define un formulario.
+
+    action: URL destino de los datos.
+
+    method: Método HTTP (GET o POST).
+
+```<input>```: Recibe datos del usuario.
+
+    type: Tipo de entrada (text, password, radio, checkbox, submit).
+
+    placeholder: Texto informativo.
+
+```<textarea>```: Área de texto multilínea.
+
+    rows: Filas visibles.
+
+    cols: Columnas visibles.
+
+    placeholder: Texto informativo.
+
+```<select>```: Contenedor de un menú desplegable.
+
+```<option>```: Opción del menú.
+
+    disabled: Deshabilitar opción.
+
+```<fieldset>```: Agrupa elementos relacionados en un formulario.
+
+```<legend>```: Proporciona un título para el grupo.
+
+```<button>```: Botón interactivo para acciones (e.g., enviar formulario).
+#### Ejemplo funcional de un formulario
+```
+ <form action="recepcion.php" method="GET">
+        <br>
+        <label for="nombre">Suo Nombre:</label>
+        <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce suo nombre">
+        <br>
+        <br>
+        <label for="password">Sua Contraseña:</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Introduce sua contraseña">
+        <br>
+        <fieldset>
+            <legend>Idioma:</legend>
+            <label for="Castellano">Castellano:</label>
+            <input type="radio" name="idioma" value="Castellano">
+            <br>
+            <label for="Catalan">Catalan:</label>
+            <input type="radio" name="idioma" value="Catalan">
+            <br>
+            <label for="Chino">Chino:</label>
+            <input type="radio" name="idioma" value="Chino">
+            <br>
+            <label for="Haitiano">Haitiano</label>
+            <input type="radio" name="idioma" value="Haitiano">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Nacionalidad</legend>
+            <label for="argelino">Argelina:</label>
+            <input type="checkbox" name="Nacionalidad" value="argelino" id="argelino">
+            <br>
+            <label for="Francesa">Francesa:</label>
+            <input type="checkbox" name="Nacionalidad" value="Francesa" id="Francesa">
+            <br>
+            <label for="Mena">Mena:</label>
+            <input type="checkbox" name="Nacionalidad" value="Mena" id="Mena">
+            <br>
+        </fieldset>
+        <br>
+        <label for="observaciones">Observasoes</label>
+        <br>
+       <textarea name="observaciones" id="observaciones" cols="80" rows="4" placeholder="Introduce suo comentario dua pagina web"></textarea>
+        <br>
+        <label for="ciudad">Ciudad:</label>
+        <select name="ciudad" id="ciudad">
+            <option value="" disabled>Selecciona sua ciudad</option>
+            <option value="Barcelona"> Barcelona</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Murcia">Murcia</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit"> Envia suo dato</button>
 ```
 ### 4.CSS
 ### 5.RESPONSIVE
