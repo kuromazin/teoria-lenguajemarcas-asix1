@@ -3,8 +3,7 @@
 1. [GITHUB](#1-github "Enlace al apartado de GitHub")
 2. [MARKDOWN](#2-markdown "Enlace al apartado de MarkDown")
 3. [HTML](#3-html "Enlace al apartado de HTML")
-4. [CSS](#4-css "Enlace al apartado de CSS")
-5. [RESPONSIVE](#5-diseño-responsive "Enlace al apartado de  Diseño Responsive")
+
 ### 1. GITHUB
 #### 1.1 Instalacion de GITHUB
 Aqui esta el link de instalacion de la herramienta.
@@ -78,7 +77,7 @@ Para hacer las tablas hay que seguir la siguiente estructura:
 | Fila 1   | Dato 1   |
 | Fila 2   | Dato 2   |
 ```
-### 3.HTML
+### 3. HTML
 ### 3.1 Estructura Base
 ````
 <!DOCTYPE html>
