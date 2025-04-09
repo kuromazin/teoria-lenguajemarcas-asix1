@@ -219,5 +219,178 @@ Por viñetas:
         <br>
         <button type="submit"> Envia suo dato</button>
 ```
-### 4.CSS
-### 5.RESPONSIVE
+### 4. CSS
+CSS (Cascading Style Sheets) se utiliza para dar estilo a las páginas web. Permite separar el contenido (HTML) de la presentación visual.
+
+#### 4.1 Selectores básicos
+Los selectores son patrones que se utilizan para seleccionar elementos HTML y aplicarles estilos:
+- `*`: Selecciona todos los elementos.
+- `elemento`: Selecciona un elemento específico (por ejemplo, `p`).
+- `.clase`: Selecciona elementos con una clase específica.
+- `#id`: Selecciona un elemento con un ID específico.
+
+#### 4.2 Propiedades comunes
+Algunas de las propiedades más utilizadas en CSS son:
+- `color`: Cambia el color del texto.
+- `background-color`: Cambia el color de fondo.
+- `font-size`: Cambia el tamaño de la fuente.
+- `margin`: Define el espacio exterior de un elemento.
+- `padding`: Define el espacio interior de un elemento.
+- `border`: Define el borde de un elemento.
+
+#### 4.3 Ejemplo de uso
+Aquí tienes un ejemplo básico de un archivo CSS:
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+```
+
+#### 4.4 Modelo de caja (Box Model)
+El modelo de caja es un concepto fundamental en CSS. Cada elemento HTML se representa como una caja rectangular que consta de:
+- **Contenido**: El contenido del elemento.
+- **Padding**: Espacio entre el contenido y el borde.
+- **Borde**: El borde del elemento.
+- **Margin**: Espacio exterior alrededor del borde.
+
+Ejemplo:
+```css
+div {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px;
+}
+```
+
+#### 4.5 Flexbox
+Flexbox es un modelo de diseño que facilita la alineación y distribución de elementos en un contenedor.
+Ejemplo:
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+```
+
+---
+
+### 5. Diseño Responsive
+El diseño responsive permite que las páginas web se adapten a diferentes tamaños de pantalla y dispositivos.
+
+#### 5.1 Meta viewport
+Es fundamental incluir la etiqueta meta viewport en el `<head>` del documento HTML para que el diseño sea responsive:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+#### 5.2 Media Queries
+Las media queries permiten aplicar estilos específicos según el tamaño de la pantalla del dispositivo:
+```css
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+```
+
+#### 5.3 Frameworks CSS
+Para facilitar el diseño responsive, se pueden usar frameworks como Bootstrap:
+- **Bootstrap**: Incluye clases predefinidas para diseño responsive.
+- Ejemplo de uso:
+```html
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">Columna 1</div>
+        <div class="col-md-6">Columna 2</div>
+    </div>
+</div>
+```
+
+#### 5.4 Unidades relativas
+En diseño responsive, es recomendable usar unidades relativas como `%`, `em`, `rem` y `vh` en lugar de unidades absolutas como `px`.
+
+#### 5.5 Ejemplo práctico
+Aquí tienes un ejemplo de diseño responsive:
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página Responsive</h1>
+    </header>
+    <div class="container">
+        <div class="box">Caja 1</div>
+        <div class="box">Caja 2</div>
+        <div class="box">Caja 3</div>
+    </div>
+</body>
+</html>
+```
